@@ -79,6 +79,8 @@ class TrainOptions:
         self.parser.add_argument('--update_param_list', nargs='+', type=str, default=None,
                                  help="Name of training parameters to update the loaded training checkpoint")
 
+        self.parser.add_argument('--channel_multiplier', type=int, default=2, choices=[1,2])
+
     def parse(self):
         opts = self.parser.parse_args()
         return opts

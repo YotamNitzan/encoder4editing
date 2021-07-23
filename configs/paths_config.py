@@ -17,7 +17,10 @@ dataset_paths = {
 
 	#  Cats Dataset (In the paper: LSUN Cat)
 	'cats_train': '',
-	'cats_test': ''
+	'cats_test': '',
+
+	'leaves_train':'/home/yotamnitzan/datasets/plant_village/flat_image_dir_splits/train',
+	'leaves_test':'/home/yotamnitzan/datasets/plant_village/flat_image_dir_splits/val'
 }
 
 model_paths = {

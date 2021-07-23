@@ -37,5 +37,12 @@ DATASETS = {
 		'train_target_root': dataset_paths['cats_train'],
 		'test_source_root': dataset_paths['cats_test'],
 		'test_target_root': dataset_paths['cats_test'],
+	},
+	'leaves_encode': {
+		'transforms': transforms_config.EncodeTransforms,
+		'train_source_root': dataset_paths['leaves_train'],
+		'train_target_root': dataset_paths['leaves_train'],
+		'test_source_root': dataset_paths['leaves_test'],
+		'test_target_root': dataset_paths['leaves_test'],
 	}
 }

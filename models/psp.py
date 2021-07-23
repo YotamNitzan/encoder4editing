@@ -22,7 +22,7 @@ class pSp(nn.Module):
         self.opts = opts
         # Define architecture
         self.encoder = self.set_encoder()
-        self.decoder = Generator(opts.stylegan_size, 512, 8, channel_multiplier=2)
+        self.decoder = Generator(opts.stylegan_size, 512, 8, channel_multiplier=self.opts.channel_multiplier)
         self.face_pool = torch.nn.AdaptiveAvgPool2d((256, 256))
         # Load weights if needed
         self.load_weights()

@@ -15,6 +15,9 @@ def get_landmark(filepath, predictor):
     img = dlib.load_rgb_image(filepath)
     dets = detector(img, 1)
 
+    if(len(dets)) != 1:
+        raise ValueError(f'{len(dets)} faces were found, skipping...')
+
     for k, d in enumerate(dets):
         shape = predictor(img, d)
 
